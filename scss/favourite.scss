@@ -1,0 +1,125 @@
+
+@import './reset';
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+  }
+  p.favourite-para{
+   text-align: center;
+   letter-spacing: 1px
+   }
+
+  div.find-favourite-category-container-wrap{
+    @include flexCenter();
+    
+    section.inner-favourite-box,
+    section.inner-favourite-box2,
+    section.inner-favourite-box3,
+    section.inner-favourite-box4,
+    section.inner-favourite-box5{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 280px;
+        // width: 13vw;
+        height: 320px;
+        margin: 0.5rem;
+        background-color: rgb(119, 117, 117);
+        border: px solid red;
+      }
+
+    
+
+      section.inner-favourite-box{
+          background-image: url("/auora//products/watches/workouts_metrics__d0lowm1gc066_large.jpg");
+        }
+      
+    
+    section.inner-favourite-box2{
+        background-image: url("/auora//products/footwear/anta_shoes-removebg-preview.png");
+        background-color: rgba(200, 250, 200, 0.801);
+        }
+    
+    section.inner-favourite-box3{
+        background-image: url("/auora//products/HandBags & Bags/gucci_handbag_women-removebg-preview.png");
+        background-color: rgba(140, 209, 236, 0.521);
+    }
+       
+    section.inner-favourite-box4{
+        background-image: url("/auora//products/Men's Wear/polo_t-shirts-removebg-preview.png");
+        background-color: rgba(221, 178, 250, 0.521);
+    }
+    
+    section.inner-favourite-box5{
+        background-image: url("/auora//products/Musical Instruments/rode-ai1-nt1-kit-web-carousel-march-2021-1000x1000-rgb-removebg-preview.png");
+        background-color: rgba(232, 250, 69, 0.521);
+    }
+
+
+        button.btn-find-fav-products{
+            padding: 10px;
+            color:black;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            margin-top: 12em;
+            margin-left: 3rem;
+            width: 60%;
+        }
+        button.btn-find-fav-products:hover{
+            background-color: black;
+            transition-delay: 200ms;
+            color:#fff;
+        }
+    }
+
+       
+    @media only screen and (max-width: 850px) and (min-width: 0px) {
+        div.find-favourite-category-container-wrap{
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 0em;
+        }
+        p.favourite-para{
+            padding: 1rem;
+        }
+    }
+  
+
+    @media only screen and (max-width: 1200px) and (min-width: 850px) {
+        div.find-favourite-category-container-wrap{
+            @include flexCenter();
+
+        section.inner-favourite-box,
+        section.inner-favourite-box2,
+        section.inner-favourite-box3,
+        section.inner-favourite-box4,
+        section.inner-favourite-box5{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 750px;
+            // width: 13vw;
+            height: 250px;
+            margin: 0.5rem;
+            background-color: rgb(119, 117, 117);
+            border: px solid rgb(60, 255, 0);
+          }
+          
+        button.btn-find-fav-products{
+            padding: 10px;
+            color:black;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            margin-top: 8em;
+            margin-left: 1rem;
+            width: 80%;
+        }
+           }
+        }
+
+        
+
+        

@@ -1,0 +1,128 @@
+
+
+@import './reset';
+
+@mixin flexEvenly(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.featured-container-wrap{
+    @include flexEvenly();
+}
+
+section.inner-featured-box,
+section.inner-featured-box2,
+section.inner-featured-box3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 650px;
+    height: 420px;
+    border: 0px solid red;
+    margin: 0rem 2rem;
+}
+
+
+    section.inner-featured-box{
+    background-image: url("/auora//products/cameras/pexels-bradley-hook-123335-removebg-preview.png"); 
+    background-color: rgba(255, 72, 0, 0.774);   }
+
+     section.inner-featured-box2{
+    background-image: url("/auora//products/cameras/Panasonic_Lumix_DC-G100_Selfie-removebg-preview.png");
+    background-color: rgba(3, 7, 241, 0.658);   }
+
+    //background-color: rgba(65, 197, 87, 0.753);}
+
+    section.inner-featured-box3{
+    background-image: url("/auora/products/cameras/DJI-Phantom-4-Advanced-Plus-removebg-preview.png");
+    background-color: rgba(203, 28, 238, 0.699);   }
+
+   // background-color: rgba(7, 248, 248, 0.918); }
+
+ 
+    p.featured, p.price,  button.btn-feature{
+        font-weight: bolder;
+        margin: 5px 25px;
+    }
+
+   p.discount{
+    background: #FFFF00;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    width: 15%;
+    padding: 5px;
+    text-align: center;
+   }
+
+   p.discount:hover{
+       cursor: pointer;
+       background-color:#fff;
+   }
+   
+   p.featured,
+   button.btn-feature:hover{
+    color:#fff;
+    }
+
+     p.featured{
+    font-size: 3rem;
+    width: 50%;
+      }
+   p.price{
+    color: #FFFF00;
+    font-weight: 17px;
+    font-weight: bolder;
+   }
+   button.btn-feature{
+    font-family: sans-serif;
+     padding: 0.65rem;
+    text-align: center;
+    font-size: 1rem;
+   } 
+    button.btn-feature:hover{
+    transition-delay: 100ms;
+    background: black;
+    }
+
+    @media only screen and(max-width: 950px) {
+        p.discount{
+            margin-top: 45px;
+            margin-left: 10px;
+            width: 15%;
+            padding: 5px;
+           }
+
+        p.featured, p.price,  button.btn-feature{
+            font-weight: bolder;
+            margin: 5px 15px;
+        }}
+
+@media only screen and (max-width: 950px) {
+    div.featured-container-wrap{
+    @include flexEvenly();
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.inner-featured-box,
+section.inner-featured-box2,
+section.inner-featured-box3{
+    margin: 1rem;
+}
+}
+
+  @media only screen and (max-width: 1440px) and (min-width: 951px) {
+    p.discount{
+        color:red;
+        width: 25%;
+    }
+    }
+    @media only screen and (max-width: 500px) and (min-width: 0px) {
+        p.discount{
+            width: 25%;
+        }
+        }
+
+        
