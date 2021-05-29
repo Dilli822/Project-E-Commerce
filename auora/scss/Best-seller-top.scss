@@ -1,0 +1,140 @@
+
+
+   @import './reset';
+
+   @mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+   }
+
+  
+   @mixin backgroundImageProperty(){
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 280px;
+    // width: 13vw;
+    height: 280px;
+    margin: 0.5rem;
+    background-color: rgb(224, 224, 224);
+    border: px solid red;
+   }
+
+   @mixin colWidthHeight(){
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px;
+    // width: 13vw;
+    height: 380px; 
+    box-shadow: rgb(122, 122, 122);
+   }
+
+    section{
+    border: px solid red;
+    }
+
+    p.best-selling-para{
+    text-align: center;
+    padding: 1em 0em 5em 0em;
+    }
+
+    div.best-seller-part-top-one-container-wrap{
+       @include flexCenter();
+      section.top-col-best-seller-part-one-1,
+      section.top-col-best-seller-part-one-2,
+      section.top-col-best-seller-part-one-3,
+      section.top-col-best-seller-part-two-4,
+      section.top-col-best-seller-part-two-2,
+      section.top-col-best-seller-part-two-3{
+    // section.inner-favourite-box2,
+    // section.inner-favourite-box3,
+    // section.inner-favourite-box4,
+    // section.inner-favourite-box5{
+        @include backgroundImageProperty();
+        
+      }
+    }
+
+    div.best-seller-part-top-one-container-wrap{
+        section.top-col-best-seller-part-one-4,
+       section.top-col-best-seller-part-two-1{
+        @include colWidthHeight();
+    }
+  }
+  section.top-col-best-seller-part-one-4{
+    background-color: rgb(255, 132, 75);
+  }
+  section.top-col-best-seller-part-two-1{
+      background-color: rgb(234, 250, 8);
+      color:white;
+  }
+
+
+  p.best-seller{
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    margin: 2em 0em 0em 0em;
+    font-size: 3.25rem;
+     text-align: center;
+      }
+
+  button.btn-best-seller{
+    display: block;
+    margin: 0 auto;
+    padding: 0.65rem;
+     text-align: center;
+     font-size: 1rem;
+     background: rgb(30, 231, 215);
+     font-weight: bolder;
+   } 
+
+    button.btn-best-seller:hover{
+    transition-delay: 100ms;
+    color:#fff;
+    background: rgb(0, 0, 0);
+
+    }
+
+
+    section.top-col-best-seller-part-one-4{
+       background-image: url("/auora/products/comestics/makeup_items-removebg-preview.png"); }
+    
+    section.top-col-best-seller-part-one-2{
+     background-image: url("/auora/products/jewellery/BNRINGBOX_HERO_C_100617-removebg-preview.png");
+     }
+  
+  section.top-col-best-seller-part-one-3{
+      background-image: url("/auora/products/HandBags & Bags/women-tassel-short-wallets-girls-3-folded-hasp-purse-card-holder-coin-bags-removebg-preview-removebg-preview.png");
+    }
+
+    section.top-col-best-seller-part-one-1{
+       background-image: url("/auora/products/handbags & bags/98004c651555825d-removebg-preview.png");
+    }
+
+    section.top-col-best-seller-part-two-2{
+      background-image: url("/auora/products/audios/JBL_FLIP4_ACC_BLACK_6957_FS_x2-1605x1605px.png");
+    }
+
+   section.top-col-best-seller-part-two-4{
+       background-image: url("/auora/products/lights/lifest2-removebg-preview.png");
+   }
+ section.top-col-best-seller-part-two-1{
+   background-image: url("/auora/products/video games/dualshock-4-listing-thumb-01-ps4-en-12oct20-removebg-preview.png");
+ }
+    section.top-col-best-seller-part-two-3{
+     background-image: url("/auora/products/visual and TVs/1-removebg-preview.png");
+  }
+
+
+ @media only screen and (max-width: 800px){
+  div.best-seller-part-top-one-container-wrap{
+    @include flexCenter();
+    flex-wrap: wrap;
+    flex-direction: column;
+  }}
+
+
+  

@@ -10,6 +10,7 @@
 
 div.featured-container-wrap{
     @include flexEvenly();
+    padding: 5em;
 }
 
 section.inner-featured-box,
@@ -26,11 +27,11 @@ section.inner-featured-box3{
 
 
     section.inner-featured-box{
-    background-image: url("/auora//products/cameras/pexels-bradley-hook-123335-removebg-preview.png"); 
+    background-image: url("/auora/products/cameras/pexels-bradley-hook-123335-removebg-preview.png"); 
     background-color: rgba(255, 72, 0, 0.774);   }
 
      section.inner-featured-box2{
-    background-image: url("/auora//products/cameras/Panasonic_Lumix_DC-G100_Selfie-removebg-preview.png");
+    background-image: url("/auora/products/cameras/Panasonic_Lumix_DC-G100_Selfie-removebg-preview.png");
     background-color: rgba(3, 7, 241, 0.658);   }
 
     //background-color: rgba(65, 197, 87, 0.753);}
@@ -50,7 +51,7 @@ section.inner-featured-box3{
    p.discount{
     background: #FFFF00;
     font-weight: bolder;
-    margin-top: 5rem;
+    margin-top: 7rem;
     margin-left: 2rem;
     width: 15%;
     padding: 5px;
@@ -69,7 +70,7 @@ section.inner-featured-box3{
 
      p.featured{
     font-size: 3rem;
-    width: 50%;
+    width: 55%;
       }
    p.price{
     color: #FFFF00;
@@ -89,15 +90,15 @@ section.inner-featured-box3{
 
     @media only screen and(max-width: 950px) {
         p.discount{
-            margin-top: 45px;
-            margin-left: 10px;
+            margin-top: 0px;
+            margin-left: 35px;
             width: 15%;
             padding: 5px;
            }
 
         p.featured, p.price,  button.btn-feature{
             font-weight: bolder;
-            margin: 5px 15px;
+            margin: 5px 35px;
         }}
 
 @media only screen and (max-width: 950px) {
@@ -117,11 +118,13 @@ section.inner-featured-box3{
     p.discount{
         color:red;
         width: 25%;
+        margin-top: 0px;
     }
     }
     @media only screen and (max-width: 500px) and (min-width: 0px) {
         p.discount{
             width: 25%;
+            margin-top: 0px;
         }
         }
 

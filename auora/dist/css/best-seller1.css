@@ -32,11 +32,12 @@ img {
 }
 
 section {
-  border: 1px solid red;
+  border: px solid red;
 }
 
 p.best-selling-para {
   text-align: center;
+  padding: 1em 0em 5em 0em;
 }
 
 div.best-seller-part-one-container-wrap {
@@ -51,23 +52,73 @@ div.best-seller-part-one-container-wrap {
           align-items: center;
 }
 
-div.best-seller-part-one-container-wrap section.col-best-seller-part-one,
-div.best-seller-part-one-container-wrap section.col-best-seller-part-two {
+div.best-seller-part-one-container-wrap section.col-best-seller-part-one-1,
+div.best-seller-part-one-container-wrap section.col-best-seller-part-one-2,
+div.best-seller-part-one-container-wrap section.col-best-seller-part-one-3,
+div.best-seller-part-one-container-wrap section.col-best-seller-part-one-4,
+div.best-seller-part-one-container-wrap section.col-best-seller-part-two-1,
+div.best-seller-part-one-container-wrap section.col-best-seller-part-two-2,
+div.best-seller-part-one-container-wrap section.col-best-seller-part-two-3,
+div.best-seller-part-one-container-wrap section.col-best-seller-part-two-4 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 280px;
   height: 280px;
   margin: 0.5rem;
-  background-color: #777575;
+  background-color: #e0e0e0;
   border: px solid red;
 }
 
-section.col-best-seller-part-one {
-  background-image: url("/products/footwear/Nike Tiempo Legend 8.jpg");
+section.col-best-seller-part-one-4 {
+  background-image: url("/auora/products/Women's wear/teen-tops.jpg");
 }
 
-section.col-best-seller-part-two {
-  background-image: url("/products/audio and speakers/JBL mini speaker.jpg");
+section.col-best-seller-part-one-2 {
+  background-image: url("/auora/products/Men's wear/fj11_1_cloudzoom-removebg-preview.png");
+}
+
+section.col-best-seller-part-one-3 {
+  background-image: url("/auora/products/women's wear/il_570xN.1190478905_2lhj-removebg-preview.png");
+}
+
+section.col-best-seller-part-one-1 {
+  background-image: url("/auora/products/Men's wear/192202_97_41-removebg-preview.png");
+}
+
+section.col-best-seller-part-two-1 {
+  background-image: url("/auora/products/electronics/apple_ipad-pro-spring21_hero_04202021_big.jpg.large_-removebg-preview.png");
+}
+
+section.col-best-seller-part-two-2 {
+  background-image: url("/auora/products/electronics/HB-UM43-Main-600x600-removebg-preview.png");
+}
+
+section.col-best-seller-part-two-3 {
+  background-image: url("/auora/products/electronics/71umuN8XVeL-removebg-preview.png");
+}
+
+section.col-best-seller-part-two-4 {
+  background-image: url("/auora/products/electronics/A1271012_TD01_V4_600x-removebg-preview.png");
+}
+
+@media only screen and (max-width: 800px) {
+  div.best-seller-part-one-container-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=best-seller1.css.map */

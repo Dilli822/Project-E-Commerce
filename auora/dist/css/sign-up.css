@@ -10,8 +10,9 @@
 }
 
 div.signup-wrap-container {
-  background-color: #cbf7f3;
+  background-color: lightgray;
   padding: 5em;
+  margin-top: 2em;
 }
 
 h1 {

@@ -41,6 +41,7 @@ div.featured-container-wrap {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5em;
 }
 
 section.inner-featured-box,
@@ -78,7 +79,7 @@ p.featured, p.price, button.btn-feature {
 p.discount {
   background: #FFFF00;
   font-weight: bolder;
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-left: 2rem;
   width: 15%;
   padding: 5px;
@@ -97,7 +98,7 @@ button.btn-feature:hover {
 
 p.featured {
   font-size: 3rem;
-  width: 50%;
+  width: 55%;
 }
 
 p.price {
@@ -121,14 +122,14 @@ button.btn-feature:hover {
 
 @media only screen and (max-width: 950px) {
   p.discount {
-    margin-top: 45px;
-    margin-left: 10px;
+    margin-top: 0px;
+    margin-left: 35px;
     width: 15%;
     padding: 5px;
   }
   p.featured, p.price, button.btn-feature {
     font-weight: bolder;
-    margin: 5px 15px;
+    margin: 5px 35px;
   }
 }
 
@@ -160,12 +161,14 @@ button.btn-feature:hover {
   p.discount {
     color: red;
     width: 25%;
+    margin-top: 0px;
   }
 }
 
 @media only screen and (max-width: 500px) and (min-width: 0px) {
   p.discount {
     width: 25%;
+    margin-top: 0px;
   }
 }
 /*# sourceMappingURL=featured-products.css.map */
