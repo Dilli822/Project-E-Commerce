@@ -50,7 +50,7 @@ section.inner-featured-box3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 650px;
+  width: 65vw;
   height: 420px;
   border: 0px solid red;
   margin: 0rem 2rem;
@@ -81,7 +81,7 @@ p.discount {
   font-weight: bolder;
   margin-top: 7rem;
   margin-left: 2rem;
-  width: 15%;
+  width: 20%;
   padding: 5px;
   text-align: center;
 }
@@ -98,7 +98,7 @@ button.btn-feature:hover {
 
 p.featured {
   font-size: 3rem;
-  width: 55%;
+  width: 35%;
 }
 
 p.price {
@@ -117,15 +117,15 @@ button.btn-feature {
 button.btn-feature:hover {
   -webkit-transition-delay: 100ms;
           transition-delay: 100ms;
-  background: black;
+  background: #000;
 }
 
 @media only screen and (max-width: 950px) {
   p.discount {
     margin-top: 0px;
     margin-left: 35px;
-    width: 15%;
     padding: 5px;
+    width: 30%;
   }
   p.featured, p.price, button.btn-feature {
     font-weight: bolder;
@@ -155,19 +155,26 @@ button.btn-feature:hover {
   section.inner-featured-box3 {
     margin: 1rem;
   }
+  p.discount {
+    margin-top: 5em;
+  }
 }
 
 @media only screen and (max-width: 1440px) and (min-width: 951px) {
   p.discount {
     color: red;
-    width: 25%;
-    margin-top: 0px;
+    width: 40%;
+    margin-top: 3em;
+  }
+  section.inner-featured-box2,
+  section.inner-featured-box3 {
+    width: 850px;
   }
 }
 
 @media only screen and (max-width: 500px) and (min-width: 0px) {
   p.discount {
-    width: 25%;
+    width: 40%;
     margin-top: 2em;
   }
 }

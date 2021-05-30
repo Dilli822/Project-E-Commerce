@@ -1,30 +1,37 @@
 
 
-@import './reset';
+    @import './reset';
 
-@mixin flexEvenly(){
+    @mixin flexEvenly(){
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+   }
 
-div.featured-container-wrap{
-    @include flexEvenly();
-    padding: 5em;
-}
-
-section.inner-featured-box,
-section.inner-featured-box2,
-section.inner-featured-box3{
+    @mixin backgroundImageProperty(){
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    width: 650px;
+    background-position: center; 
+   }
+
+    @mixin containerSize(){
+    width: 65vw;
     height: 420px;
     border: 0px solid red;
-    margin: 0rem 2rem;
-}
+    margin: 0rem 2rem; 
+     }
 
+    div.featured-container-wrap{
+    @include flexEvenly();
+    padding: 5em;
+     }
+
+    section.inner-featured-box,
+    section.inner-featured-box2,
+    section.inner-featured-box3{
+    @include backgroundImageProperty();
+    @include containerSize();
+    }
 
     section.inner-featured-box{
     background-image: url("/auora/products/cameras/pexels-bradley-hook-123335-removebg-preview.png"); 
@@ -53,7 +60,7 @@ section.inner-featured-box3{
     font-weight: bolder;
     margin-top: 7rem;
     margin-left: 2rem;
-    width: 15%;
+    width: 20%;
     padding: 5px;
     text-align: center;
    }
@@ -68,10 +75,11 @@ section.inner-featured-box3{
     color:#fff;
     }
 
-     p.featured{
+    p.featured{
     font-size: 3rem;
-    width: 55%;
-      }
+    width: 35%;
+    }
+
    p.price{
     color: #FFFF00;
     font-weight: 17px;
@@ -85,15 +93,15 @@ section.inner-featured-box3{
    } 
     button.btn-feature:hover{
     transition-delay: 100ms;
-    background: black;
+    background: #000;
     }
 
     @media only screen and(max-width: 950px) {
         p.discount{
             margin-top: 0px;
             margin-left: 35px;
-            width: 15%;
             padding: 5px;
+            width: 30%;
            }
 
         p.featured, p.price,  button.btn-feature{
@@ -101,29 +109,37 @@ section.inner-featured-box3{
             margin: 5px 35px;
         }}
 
-@media only screen and (max-width: 950px) {
+    @media only screen and (max-width: 950px) {
     div.featured-container-wrap{
     @include flexEvenly();
     flex-wrap: wrap;
     justify-content: center;
-}
-section.inner-featured-box,
-section.inner-featured-box2,
-section.inner-featured-box3{
+    }
+   section.inner-featured-box,
+   section.inner-featured-box2,
+   section.inner-featured-box3{
     margin: 1rem;
-}
-}
+    }
+    p.discount{
+    margin-top: 5em;
+    }
+   }
 
   @media only screen and (max-width: 1440px) and (min-width: 951px) {
     p.discount{
         color:red;
-        width: 25%;
-        margin-top: 0px;
+        width: 40%;
+        margin-top: 3em;
+    }
+    section.inner-featured-box2,
+    section.inner-featured-box3{
+        width: 850px;
     }
     }
+
     @media only screen and (max-width: 500px) and (min-width: 0px) {
         p.discount{
-            width: 25%;
+            width: 40%;
             margin-top: 2em;
         }
         }
