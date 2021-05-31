@@ -1,0 +1,86 @@
+div.best-seller-part-one-container-wrap {
+    position: relative;
+    width: 50%;
+  }
+  
+  section{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  div.best-seller-part-one-container-wrap:hover .overlay {
+    width: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+  @mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   }
+    section{
+    border: px solid red;
+    }
+
+    p.best-selling-para{
+    text-align: center;
+    padding: 1em 0em 5em 0em;
+    }
+
+    div.best-seller-part-one-container-wrap{
+       @include flexCenter();
+
+      section.col-best-seller-part-one-1,
+      section.col-best-seller-part-one-2,
+      section.col-best-seller-part-one-3,
+      section.col-best-seller-part-one-4,
+      section.col-best-seller-part-two-1,
+      section.col-best-seller-part-two-2,
+      section.col-best-seller-part-two-3,
+      section.col-best-seller-part-two-4{
+    // section.inner-favourite-box2,
+    // section.inner-favourite-box3,
+    // section.inner-favourite-box4,
+    // section.inner-favourite-box5{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 280px;
+    // width: 13vw;
+    height: 280px;
+    margin: 0.5rem;
+    background-color: rgb(224, 224, 224);
+    border: px solid red;
+    }
+    }
+    
+
+    section.col-best-seller-part-one-4{
+        background-image: url("/auora/products/Women's wear/teen-tops.jpg");
+     }
+    

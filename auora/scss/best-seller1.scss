@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
- 
+
    }
     section{
     border: px solid red;
@@ -19,6 +19,7 @@
 
     div.best-seller-part-one-container-wrap{
        @include flexCenter();
+
       section.col-best-seller-part-one-1,
       section.col-best-seller-part-one-2,
       section.col-best-seller-part-one-3,
@@ -40,14 +41,20 @@
     margin: 0.5rem;
     background-color: rgb(224, 224, 224);
     border: px solid red;
-      }
     }
+    }
+    
+    section.col-best-seller-part-one-1{
+
+      background-image: url("/auora/products/Men's wear/192202_97_41-removebg-preview.png");
+     }
 
     section.col-best-seller-part-one-4{
         background-image: url("/auora/products/Women's wear/teen-tops.jpg");
      }
     
     section.col-best-seller-part-one-2{
+
       background-image: url("/auora/products/Men's wear/fj11_1_cloudzoom-removebg-preview.png");
      }
   
@@ -55,10 +62,7 @@
     background-image: url("/auora/products/women's wear/il_570xN.1190478905_2lhj-removebg-preview.png");
     }
 
-    section.col-best-seller-part-one-1{
-  background-image: url("/auora/products/Men's wear/192202_97_41-removebg-preview.png");
-    }
-
+                        
     section.col-best-seller-part-two-1{
   background-image: url("/auora/products/electronics/apple_ipad-pro-spring21_hero_04202021_big.jpg.large_-removebg-preview.png");
     }
@@ -78,3 +82,19 @@
     flex-wrap: wrap;
     flex-direction: column;
   }}
+
+
+  button.text{
+    opacity: 0;
+    color:rgb(255, 255, 255);
+    font-size: 1.25em;
+    padding: 5.85em;
+    background-color: rgb(51, 87, 88);    
+  }
+  button.text:hover{
+     opacity: 0.85;
+     font-weight: bolder;
+   
+  }
+
+  
