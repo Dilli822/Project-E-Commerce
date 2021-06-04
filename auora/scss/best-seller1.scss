@@ -1,6 +1,31 @@
 
 
-   @import './reset';
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+   *{
+       padding: 0px;
+       margin: 0px;
+       box-sizing: border-box;
+       scroll-behavior: smooth;
+       font-family: Roboto,'sans-serif';
+       border: 0px solid;
+       outline: none;
+   }
+   h1{
+       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       text-align: center;
+       font-size: 4em;
+   }
+ 
+   img{
+       max-width: 100%;
+   }
+    @media only screen and (max-width: 800px) {
+        h1{
+            font-size: 2.75em;
+            padding: 2rem;
+        }
+        
+    }
 
    @mixin flexCenter(){
     display: flex;
@@ -35,9 +60,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 280px;
+    width: 200px;
     // width: 13vw;
-    height: 280px;
+    height: 200px;
     margin: 0.5rem;
     background-color: rgb(224, 224, 224);
     border: px solid red;
@@ -76,25 +101,59 @@
     section.col-best-seller-part-two-4{
       background-image: url("/auora/products/electronics/A1271012_TD01_V4_600x-removebg-preview.png");
   }
+
+  button.text{
+     position: relative;
+    // top: 30%;
+    // left: 20%;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    top: 50%;
+    opacity: 0;
+    color:rgb(255, 255, 255);
+    font-size: 1.25em;
+    padding: 1.7rem;
+    background-color: rgb(51, 87, 88);  
+  }
+
  @media only screen and (max-width: 800px){
   div.best-seller-part-one-container-wrap{
     @include flexCenter();
     flex-wrap: wrap;
     flex-direction: column;
-  }}
-
-
-  button.text{
-    opacity: 0;
-    color:rgb(255, 255, 255);
-    font-size: 1.25em;
-    padding: 5.85em;
-    background-color: rgb(51, 87, 88);    
   }
+  section.col-best-seller-part-one-1,
+  section.col-best-seller-part-one-2,
+  section.col-best-seller-part-one-3,
+  section.col-best-seller-part-one-4,
+  section.col-best-seller-part-two-1,
+  section.col-best-seller-part-two-2,
+  section.col-best-seller-part-two-3,
+  section.col-best-seller-part-two-4{
+// width: 13vw;
+height: 80px;
+width: 80px;
+margin: 0.2rem;
+}
+}
+
   button.text:hover{
-     opacity: 0.85;
-     font-weight: bolder;
-   
+     opacity: 1;
   }
 
+  @media only screen and (max-width: 320px){
+    section.col-best-seller-part-one-1,
+    section.col-best-seller-part-one-2,
+    section.col-best-seller-part-one-3,
+    section.col-best-seller-part-one-4,
+    section.col-best-seller-part-two-1,
+    section.col-best-seller-part-two-2,
+    section.col-best-seller-part-two-3,
+    section.col-best-seller-part-two-4{
+      max-width: 150px;
+  }
+ }
+
+  
   

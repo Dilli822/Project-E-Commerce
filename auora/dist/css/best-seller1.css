@@ -16,10 +16,6 @@ h1 {
   font-size: 4em;
 }
 
-button {
-  cursor: pointer;
-}
-
 img {
   max-width: 100%;
 }
@@ -63,8 +59,8 @@ div.best-seller-part-one-container-wrap section.col-best-seller-part-two-4 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
   margin: 0.5rem;
   background-color: #e0e0e0;
   border: px solid red;
@@ -102,6 +98,19 @@ section.col-best-seller-part-two-4 {
   background-image: url("/auora/products/electronics/A1271012_TD01_V4_600x-removebg-preview.png");
 }
 
+button.text {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  top: 50%;
+  opacity: 0;
+  color: white;
+  font-size: 1.25em;
+  padding: 1.7rem;
+  background-color: #335758;
+}
+
 @media only screen and (max-width: 800px) {
   div.best-seller-part-one-container-wrap {
     display: -webkit-box;
@@ -120,18 +129,37 @@ section.col-best-seller-part-two-4 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-button.text {
-  opacity: 0;
-  color: white;
-  font-size: 1.25em;
-  padding: 5.85em;
-  background-color: #335758;
+  section.col-best-seller-part-one-1,
+  section.col-best-seller-part-one-2,
+  section.col-best-seller-part-one-3,
+  section.col-best-seller-part-one-4,
+  section.col-best-seller-part-two-1,
+  section.col-best-seller-part-two-2,
+  section.col-best-seller-part-two-3,
+  section.col-best-seller-part-two-4 {
+    height: 80px;
+    width: 80px;
+    margin: 0.2rem;
+  }
 }
 
 button.text:hover {
-  opacity: 0.85;
-  font-weight: bolder;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 320px) {
+  section.col-best-seller-part-one-1,
+  section.col-best-seller-part-one-2,
+  section.col-best-seller-part-one-3,
+  section.col-best-seller-part-one-4,
+  section.col-best-seller-part-two-1,
+  section.col-best-seller-part-two-2,
+  section.col-best-seller-part-two-3,
+  section.col-best-seller-part-two-4 {
+    max-width: 150px;
+  }
+  p.copyright {
+    font-size: 0.85rem;
+  }
 }
 /*# sourceMappingURL=best-seller1.css.map */

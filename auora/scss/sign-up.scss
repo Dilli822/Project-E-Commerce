@@ -18,24 +18,24 @@
 }
 div.signup-wrap-container{
     background-color: rgb(211, 211, 211);
-    padding: 5em;
-    margin-top: 2em;
+    padding: 0em; //5
+    margin-top: 0em; //2
 }
 h1{
     font-family: sans-serif;
-    font-size: 2.65em;
+    font-size: 2rem; 
     text-align: center;
 }
 p.signup-para{
     text-align: center;
     color:rgb(27, 27, 27);
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
    
 }
 
 div.signup-wrap{
     @include flexCenter();
-    margin: -1em;
+    margin: 0rem;
  
 }
  input.signup-bar{
@@ -71,19 +71,50 @@ div.signup-wrap{
     
    }
 
-   @media only screen and (max-width: 800px){
-    div.signup-wrap-container{
-        background-color: rgb(203, 247, 243);
-        padding: 2em;
-    }
-    div.signup-wrap{
-        @include flexCenter();
-        flex-wrap: wrap;
-     
-    }
-    input.signup-bar{
-        width: 100%;
-    }
+   @media only screen and (max-width: 600px){
+       h1{
+           font-size: 1rem;
+       }
+       button.signup{
+        padding: 5px;
+        margin: 5px;
+       }
+       
+div.signup-wrap{
+    @include flexCenter();
+    justify-content: flex-start;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+input.signup-bar{
+    padding: 5px;
+    width: 100%;
+}
    }
+//    @media only screen and (max-width: 320px){
+//     h1{
+//         font-size: 1rem;
+//     }
+//     button.signup{
+//      padding: 0px;
+//      margin: 0px;
+//     }
+    
+// div.signup-wrap{
+//  @include flexCenter();
+//  margin: 0rem;
+//  padding: 0rem;
+// }
+
+// input.signup-bar{
+//  padding: 5px;
+//  width: 100%;
+// }
+// div.signup-wrap-container{
+//     padding: 0px;
+//     margin: 0px;
+// }
+// }
 
    
