@@ -20,13 +20,6 @@ img {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 2.75em;
-    padding: 2rem;
-  }
-}
-
 section {
   border: px solid red;
 }
@@ -112,6 +105,13 @@ button.text {
 }
 
 @media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 2.75em;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   div.best-seller-part-one-container-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -137,8 +137,6 @@ button.text {
   section.col-best-seller-part-two-2,
   section.col-best-seller-part-two-3,
   section.col-best-seller-part-two-4 {
-    height: 80px;
-    width: 80px;
     margin: 0.2rem;
   }
 }
@@ -157,9 +155,6 @@ button.text:hover {
   section.col-best-seller-part-two-3,
   section.col-best-seller-part-two-4 {
     max-width: 150px;
-  }
-  p.copyright {
-    font-size: 0.85rem;
   }
 }
 /*# sourceMappingURL=best-seller1.css.map */

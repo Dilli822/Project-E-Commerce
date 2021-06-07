@@ -50,6 +50,7 @@
    }
 
    input.search-bar{ 
+     color:#fff;
     border: $lower-head-border;
     padding: 12px;
     width: 500px;
@@ -86,7 +87,7 @@
 
    @media screen and (max-width: 600px) {
     div.low-top-head{
-      justify-content: flex-start;
+      display: block;
       width: auto;
     }
     i#barr{

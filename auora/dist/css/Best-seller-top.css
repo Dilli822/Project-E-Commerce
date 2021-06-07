@@ -13,7 +13,7 @@
 h1 {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 button {
@@ -22,13 +22,6 @@ button {
 
 img {
   max-width: 100%;
-}
-
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 2.75em;
-    padding: 2rem;
-  }
 }
 
 section {
@@ -130,22 +123,22 @@ section.top-col-best-seller-part-one-1 {
 }
 
 section.top-col-best-seller-part-two-2 {
-  background-image: url("products/audios/JBL_FLIP4_ACC_BLACK_6957_FS_x2-1605x1605px.png");
+  background-image: url("/auora/products/audios/JBL_FLIP4_ACC_BLACK_6957_FS_x2-1605x1605px.png");
 }
 
 section.top-col-best-seller-part-two-4 {
-  background-image: url("products/lights/lifest2-removebg-preview.png");
+  background-image: url("/auora/products/lights/lifest2-removebg-preview.png");
 }
 
 section.top-col-best-seller-part-two-1 {
-  background-image: url("products/video games/dualshock-4-listing-thumb-01-ps4-en-12oct20-removebg-preview.png");
+  background-image: url("/auora/products/video games/dualshock-4-listing-thumb-01-ps4-en-12oct20-removebg-preview.png");
 }
 
 section.top-col-best-seller-part-two-3 {
   background-image: url("/auora/products/visual and TVs/1-removebg-preview.png");
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) and (min-width: 0px) {
   div.best-seller-part-top-one-container-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -172,7 +165,7 @@ section.top-col-best-seller-part-two-3 {
     height: 380px;
     -webkit-box-shadow: #7a7a7a;
             box-shadow: #7a7a7a;
-    width: 200px;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=Best-seller-top.css.map */

@@ -116,21 +116,29 @@
     }
 
     section.top-col-best-seller-part-two-2{
-      background-image: url("products/audios/JBL_FLIP4_ACC_BLACK_6957_FS_x2-1605x1605px.png");
+      background-image: url("/auora/products/audios/JBL_FLIP4_ACC_BLACK_6957_FS_x2-1605x1605px.png");
     }
 
    section.top-col-best-seller-part-two-4{
-       background-image: url("products/lights/lifest2-removebg-preview.png");
+       background-image: url("/auora/products/lights/lifest2-removebg-preview.png");
    }
  section.top-col-best-seller-part-two-1{
-   background-image: url("products/video games/dualshock-4-listing-thumb-01-ps4-en-12oct20-removebg-preview.png");
+   background-image: url("/auora/products/video games/dualshock-4-listing-thumb-01-ps4-en-12oct20-removebg-preview.png");
  }
     section.top-col-best-seller-part-two-3{
      background-image: url("/auora/products/visual and TVs/1-removebg-preview.png");
   }
 
 
- @media only screen and (max-width: 800px){
+//   @media only screen and (max-width: 600px) and (min-width: 320px) {
+//     section.top-col-best-seller-part-one-4,
+//    section.top-col-best-seller-part-two-1{
+//     width: 300px;
+//     border: 2px solid blue;
+// }
+// }
+
+ @media only screen and (max-width: 600px) and (min-width: 0px){
   div.best-seller-part-top-one-container-wrap{
     @include flexCenter();
     flex-wrap: wrap;
@@ -140,9 +148,12 @@
     section.top-col-best-seller-part-one-4,
    section.top-col-best-seller-part-two-1{
     @include colWidthHeight();
-    width: 200px;
+    width: 300px;
 }
-}}
+}
+}
+
+
 
 
   

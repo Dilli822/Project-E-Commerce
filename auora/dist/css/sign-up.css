@@ -24,7 +24,6 @@ h1 {
 p.signup-para {
   text-align: center;
   color: #1b1b1b;
-  padding: 0rem 0rem 0rem 0rem;
 }
 
 div.signup-wrap {
@@ -96,6 +95,10 @@ button.signup:hover {
   button.signup {
     padding: 5px;
     margin: 5px;
+    font-size: 1rem;
+  }
+  div.signup-wrap-container {
+    padding: 0.5rem 2rem;
   }
   div.signup-wrap {
     display: -webkit-box;

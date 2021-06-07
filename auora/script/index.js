@@ -43,3 +43,9 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+
+// // jQuery
+//   $(".featured-container-wrap").hover(function(){
+//     $(".featured").css("opacity", "0");
+//   })

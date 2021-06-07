@@ -19,13 +19,7 @@
    img{
        max-width: 100%;
    }
-    @media only screen and (max-width: 800px) {
-        h1{
-            font-size: 2.75em;
-            padding: 2rem;
-        }
-        
-    }
+  
 
    @mixin flexCenter(){
     display: flex;
@@ -117,7 +111,15 @@
     background-color: rgb(51, 87, 88);  
   }
 
- @media only screen and (max-width: 800px){
+  @media only screen and (max-width: 800px) {
+    h1{
+        font-size: 2.75em;
+        padding: 2rem;
+    }
+    
+ }
+
+ @media only screen and (max-width: 600px){
   div.best-seller-part-one-container-wrap{
     @include flexCenter();
     flex-wrap: wrap;
@@ -132,8 +134,8 @@
   section.col-best-seller-part-two-3,
   section.col-best-seller-part-two-4{
 // width: 13vw;
-height: 80px;
-width: 80px;
+// height: 80px;
+// width: 80px;
 margin: 0.2rem;
 }
 }

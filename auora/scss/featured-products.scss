@@ -45,7 +45,7 @@
 
     section.inner-featured-box3{
     background-image: url("/auora/products/cameras/DJI-Phantom-4-Advanced-Plus-removebg-preview.png");
-    background-color: rgba(203, 28, 238, 0.699);   }
+    background-color: rgba(220, 73, 250, 0.836);   }
 
    // background-color: rgba(7, 248, 248, 0.918); }
 
@@ -96,9 +96,18 @@
     background: #000;
     }
 
-    @media only screen and(max-width: 950px) {
+    @media only screen and (max-width: 950px) {
+        div.featured-container-wrap{
+            @include flexEvenly();
+            flex-wrap: wrap;
+            justify-content: center;
+            }
+           section.inner-featured-box,
+           section.inner-featured-box2,
+           section.inner-featured-box3{
+            margin: 1rem;
+            }
         p.discount{
-            margin-top: 0px;
             margin-left: 35px;
             padding: 5px;
             width: 30%;
@@ -108,36 +117,60 @@
             font-weight: bolder;
             margin: 5px 35px;
         }}
+        
+        @media only screen and (max-width: 800px){
+            section.inner-featured-box,
+            section.inner-featured-box2,
+            section.inner-featured-box3{
+            @include backgroundImageProperty();
+            @include containerSize();
+            }
+            p.featured{
+                font-size: 2rem;
+                margin: 1rem 35px;
 
-    @media only screen and (max-width: 950px) {
-    div.featured-container-wrap{
-    @include flexEvenly();
-    flex-wrap: wrap;
-    justify-content: center;
-    }
-   section.inner-featured-box,
-   section.inner-featured-box2,
-   section.inner-featured-box3{
-    margin: 1rem;
-    }
-    p.discount{
-    margin-top: 5em;
-    }
-   }
+            }
+        }
+
+//     @media only screen and (max-width: 950px) {
+
+//     p.discount{
+//     margin-top: 5em;
+//     }
+//    }
 
   @media only screen and (max-width: 1440px) and (min-width: 951px) {
+
+    p.featured{
+        font-size: 1.5rem;
+        margin: 1.5rem 35px;
+    }
+    
+    div.featured-container-wrap{
+        padding: 2em;
+         }
+
     p.discount{
         color:red;
         width: 40%;
         margin-top: 3em;
     }
-    section.inner-featured-box2,
-    section.inner-featured-box3{
-        width: 850px;
-    }
+  
     }
 
     @media only screen and (max-width: 500px) and (min-width: 0px) {
+        div.featured-container-wrap{
+            padding: 0em;
+             }
+    
+        section.inner-featured-box,
+        section.inner-featured-box2,
+        section.inner-featured-box3{
+        @include backgroundImageProperty();
+        @include containerSize();
+        width: 100%;
+        max-width: 100%;
+        } 
         p.discount{
             width: 40%;
             margin-top: 2em;

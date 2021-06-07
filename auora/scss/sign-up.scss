@@ -29,7 +29,7 @@ h1{
 p.signup-para{
     text-align: center;
     color:rgb(27, 27, 27);
-    padding: 0rem 0rem 0rem 0rem;
+    // padding: 0rem 0rem 0rem 0rem;
    
 }
 
@@ -78,8 +78,11 @@ div.signup-wrap{
        button.signup{
         padding: 5px;
         margin: 5px;
+
        }
-       
+       div.signup-wrap-container{
+        padding: 0.5rem 2rem; //5
+     }
 div.signup-wrap{
     @include flexCenter();
     justify-content: flex-start;

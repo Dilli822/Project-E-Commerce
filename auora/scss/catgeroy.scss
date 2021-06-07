@@ -15,6 +15,11 @@ img{
  
 }
 
+#categrory-img{
+    width:550px;
+     height:480px;
+  }
+
 section{
     border: px solid red;
 
@@ -71,7 +76,7 @@ padding: 2em;
 
 h6{
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 h4{
     font-weight: bolder;
@@ -101,11 +106,26 @@ button.top-products-btn a{
 button.top-products-btn:hover{
     background-color: black;
 }
+
+@media only screen and (max-width: 800px){
+    #categrory-img{
+        width: 440px;
+        height: 250px;
+      } 
+      
+div.top-products-wrap{
+    padding: 1em;
+}
+}
+
 @media  only screen and (max-width: 950px) {
     div.top-products-wrap{
         flex-wrap: wrap;
         justify-content: center;
     } 
+
+
+
     section.left-product-wrapped:hover,
     section.mid-product-wrapped:hover,
     section.right-product-wrapped:hover {
